@@ -1,0 +1,442 @@
+<section class="banner py-0">
+    <div class=" owl-carousel hero-slider">
+        <div class="item" style="background-image: url('images/slider/s1.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="banner-content">
+                            <h2>Online Mobile Recharge</h2>
+                            <p>Can'their wherein own upon female without saying made in second the male Own you. Him
+                                fill good seasons hath</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('images/slider/s2.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="banner-content">
+                            <h2>Utility bill payments</h2>
+                            <p>Can'their wherein own upon female without saying made in second the male Own you. Him
+                                fill good seasons hath</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('images/slider/s3.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="banner-content">
+                            <h2>Online Bills Payments</h2>
+                            <p>Can'their wherein own upon female without saying made in second the male Own you. Him
+                                fill good seasons hath</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner start -->
+
+<!-- Main form start -->
+<section class="main-form py-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="bill-items nav nav-tabs" id="teleporter">
+                    <li class="nav-item active"><a href="/Mobile" class="nav-link"><i
+                                class="fas fa-mobile"></i>Mobile</a></li>
+                    <li class="nav-item"><a href="/DTH" class="nav-link"><i class="fas fa-network-wired"></i>DTH</a>
+                    </li>
+                    <li class="nav-item"><a href="/Datacard" class="nav-link"><i
+                                class="fas fa-credit-card"></i>Datacard</a></li>
+                    <li class="nav-item"><a href="/Landline" class="nav-link"><i class="fas fa-tty"></i>Landline</a>
+                    </li>
+                    <li class="nav-item"><a href="/Broadband" class="nav-link"><i
+                                class="fas fa-broadcast-tower"></i>Broadband</a></li>
+                    <li class="nav-item"><a href="/Electricity" class="nav-link"><i
+                                class="fas fa-lightbulb"></i>Electricity</a></li>
+                    <li class="nav-item"><a href="/Gas" class="nav-link"><i class="fas fa-burn"></i>Gas</a></li>
+                    <li class="nav-item"><a href="/Metro" class="nav-link"><i class="fas fa-train"></i>Metro</a></li>
+                    <li class="nav-item"><a href="/Water" class="nav-link"><i class="fas fa-lightbulb"></i>Water</a>
+                    </li>
+                    <!--<li class="nav-item"><a href="google-pay.php" class="nav-link"><i class="fab fa-google-play"></i>G Play</a></li>
+                        <li class="nav-item"><a href="cable.php" class="nav-link"><i class="fas fa-tv"></i>Cable</a></li>
+                        <li class="nav-item"><a href="muncipality.html" class="nav-link"><i class="fas fa-holly-berry"></i>Muncipality</a></li>
+                        <li class="nav-item"><a href="emi.html" class="nav-link"><i class="fas fa-hand-holding-usd"></i>EMI</a></li>
+                        <li class="nav-item"><a href="traffic-challan.html" class="nav-link"><i class="fab fa-accusoft"></i>Challan</a></li>
+                        <li class="nav-item"><a href="housing.html" class="nav-link"><i class="fas fa-building"></i>Housing</a></li>-->
+                </ul>
+                <ul class="morebtn">
+                    <li>
+                        <a href="#" class="nav-link mbtn"><i class="fas fa-ellipsis-v"></i>More</a>
+                        <ul class="dropdown-menu" id="receiver">
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+<!-- Mobile recharge start -->
+        <div class="row">
+            <div class="col-md-12 form-area pt-5">
+                <h2 class="text-4 mb-3">Online Mobile Recharge</h2>
+                <form id="form-area" method="post">
+                    <div class="mb-3">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input id="prepaid" name="rechargProbillpayment" class="custom-control-input" checked=""
+                                required="" type="radio">
+                            <label class="custom-control-label" for="prepaid">Prepaid</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input id="postpaid" name="rechargProbillpayment" class="custom-control-input" required=""
+                                type="radio">
+                            <label class="custom-control-label" for="postpaid">Postpaid</label>
+                        </div>
+                        <a href="#" data-target="#view-plans" data-toggle="modal" class="view-plans">View Plans</a>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 col-lg-3 form-group">
+                            <input type="text" class="form-control" data-bv-field="number" id="mobileNumber" required=""
+                                placeholder="Enter Mobile Number">
+                        </div>
+                        <div class="col-md-6 col-lg-3 form-group">
+                            <select class="custom-select" id="operator" required="">
+                                <option value="">Select Your Operator</option>
+                                {{#each data.operator}}
+                                <option value="{{this.id}}">{{this.operator}}</option>
+                                {{/each}}
+                                <!--<option>GramenPhone</option>
+                                <option>Banlalink</option>
+                                <option>Airtel</option>
+                                <option>Robi</option>
+                                <option>Citycell</option>
+                                <option>Xirosoft</option>-->
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-2 form-group">
+                            <select class="custom-select" id="operator" required="">
+                                <option value="">Select Circle</option>
+                                {{#each data.circle}}
+                               <!-- <option>Asam</option>
+                                <option>Gujarat</option>
+                                <option>Dheli</option>
+                                <option>Chennai</option>
+                                <option>Kolkata</option>
+                                <option>Bombuy</option>
+                                <option>Panjab</option>-->
+                                <option value="{{this.id}}">{{this.circle}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-2">
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend"> <span class="input-group-text">$</span> </div>
+                                <input class="form-control" id="amount" placeholder="Enter Amount" required=""
+                                    type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-2 form-group">
+                            <a class="btn btn-default btn-block rounded-0" href="/login">Continue</a>
+   
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main form end -->
+
+
+<!-- Start Featured offer Section -->
+<section class="featured-offer bg-offwhite">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-12 m-auto text-left">
+                <div class="sec-heading mb-3">
+                    <span class="tagline">Featured Offer</span>
+                    <!-- <h3 class="sec-title"> About Our featured offer</h3> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 m-auto">
+                <div class="featuredOfferBox">
+                    <div class="featuredOffer-caro fc-1 owl-carousel" data-slide="5" data-return="true">
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/1.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/2.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/3.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/4.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/5.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/6.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/7.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/8.jpg" alt="" class="featuredimg">
+                        </a>
+                        <a href="#" class="fItems">
+                            <img src="images/sm-banner/9.jpg" alt="" class="featuredimg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Featured offer Section -->
+
+<!-- Feature section start -->
+<section class="feature ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="iconBox">
+                    <i class="fas fa-globe"></i>
+                    <h5><a href="#">Worldwide Service</a></h5>
+                    <p>Can their wherein own upon female without saying made in second them male own you. Him fill good
+                        last seasons hath moved and</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="iconBox">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h5><a href="#">Cheapest Price</a></h5>
+                    <p>Can their wherein own upon female without saying made in second them male own you. Him fill good
+                        last seasons hath moved and</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="iconBox">
+                    <i class="fas fa-times-circle"></i>
+                    <h5><a href="#">Easy Cancellation</a></h5>
+                    <p>Can their wherein own upon female without saying made in second them male own you. Him fill good
+                        last seasons hath moved and</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="work bg-bluewhite">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-9 m-auto text-center">
+                <div class="sec-heading">
+                    <span class="tagline">What We Do </span>
+                    <h3 class="sec-title">Simple, fast and Hassle Free payments </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="process">
+                    <ul>
+                        <li class="card">
+                            <span class="icon-bg">
+                                <i class="ti-signal"></i>
+                            </span>
+                            <h5>Phone Recharge & DTH</h5>
+                            <p>Their over fly creature first fish fruitful fourth our very thing said man our land</p>
+                        </li>
+                        <li class="card">
+                            <span class="icon-bg">
+                                <i class="ti-calendar"></i>
+                            </span>
+                            <h5>Bill Payments</h5>
+                            <p>Their over fly creature first fish fruitful fourth our very thing said man our land</p>
+                        </li>
+                        <li class="card">
+                            <span class="icon-bg">
+                                <i class="ti-user"></i>
+                            </span>
+                            <h5>Bus Tickets</h5>
+                            <p>Their over fly creature first fish fruitful fourth our very thing said man our land</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="process">
+                    <ul>
+                        <li class="card">
+                            <span class="icon-bg">
+                                <i class="ti-palette"></i>
+                            </span>
+                            <h5>Shopping in Local Stores </h5>
+                            <p>Their over fly creature first fish fruitful fourth our very thing said man our land</p>
+                        </li>
+                        <li class="card">
+                            <span class="icon-bg">
+                                <i class="ti-home"></i>
+                            </span>
+                            <h5>Boost your finances</h5>
+                            <p>Their over fly creature first fish fruitful fourth our very thing said man our land</p>
+                        </li>
+                        <li class="card">
+                            <span class="icon-bg">
+                                <i class="ti-layers"></i>
+                            </span>
+                            <h5>Transfer money to Bank</h5>
+                            <p>Their over fly creature first fish fruitful fourth our very thing said man our land</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="countersection bg-blue text-white">
+    <div class="container">
+        <div class="row" id="counter">
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-globe"></i>
+                    <h5><span class="counter-value" data-count="1203">0</span>M</h5>
+                    <p>Transactions</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h5><span class="counter-value" data-count="7820">0</span>M</h5>
+                    <p>Users</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                    <h5><span class="counter-value" data-count="90066">0</span></h5>
+                    <p>App Downloads</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-comments"></i>
+                    <h5><span class="counter-value" data-count="4000">0</span></h5>
+                    <p>App Review</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Counter Section -->
+
+<!-- App Section start -->
+<section class="app-section">
+    <div class="container-fluid">
+
+        <div class="row align-items-center">
+            <div class="col leftside  text-md-right text-sm-center">
+                <div class="app-inner-block">
+                    <div class="contentBox">
+                        <h3>Go Probill - Download the IOS Super App </h3>
+                        <p>Download the app now &amp; make convenience a part of your life.</p>
+                        <a title="Google Play" target="_blank" href="#" class="btn-google-store">
+                            <img src="images/app/app-store.png" alt="" class="googleplay">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col middleside">
+                <img src="images/app/phone.png" alt="" id="app">
+            </div>
+            <div class="col rightside">
+                <div class="app-inner-block text-md-left text-sm-center">
+                    <div class="contentBox">
+                        <h3>Go Probill - Download the Android Super App </h3>
+                        <p>Download the app now &amp; start earning <br>smartly.</p>
+                        <a title="Google Play" target="_blank" href="#" class="btn-google-store">
+                            <img src="images/app/google-play-store.png" alt="" class="googleplay">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- App Section End -->
+
+<section class="section bg-light shadow-md pt-4 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-lock"></i>
+                    <h5>Secure Payments</h5>
+                    <p>Moving your card details to a much more secured place.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h5>Trust pay</h5>
+                    <p>100% Payment Protection. Easy Return Policy.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fas fa-retweet"></i>
+                    <h5>Refer &amp; Earn</h5>
+                    <p>Invite a friend to sign up and earn up to $125.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="iconBox">
+                    <i class="fab fa-superpowers"></i>
+                    <h5>24/7 Support</h5>
+                    <p>We're here to help. Have a query and need help ? <a href="contact.php">Click here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call to action section start -->
+<section class="callto-action">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h3>Want To Become a Agent</h3>
+                <p>Success And Spirit In Our Company</p>
+            </div>
+            <div class="col-md-4 text-md-right">
+                <a href="/Signup" class="btn btn-default">Register Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 
+
+                     

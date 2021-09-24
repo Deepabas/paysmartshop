@@ -1,0 +1,198 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+<script src="app.js"></script>
+<!--<body id="title">
+<script id="handlebars-demo" type="text/x-handlebars-template">
+	<div>
+		My name is {{name}}. I am a {{occupation}}.	
+	</div>
+</script>
+</body>-->
+<!--<script>
+
+var template = $('#handlebars-demo').html();
+
+var context = { "name" : "Ritesh Kumar", "occupation" : "developer" };
+
+//Compile the template data into a function
+var templateScript = Handlebars.compile(template);
+
+var html = templateScript(context);
+console.log(html);
+//$(document.body).append(html);
+$('#title').append(html);
+
+</script>-->
+<html>
+<head>
+<title>personal Informarion</title>
+</head>
+<style>
+button{
+background-color:#ffffff;
+padding: 10px 20px;
+border:1px solid #000000;
+}
+table
+{
+padding:10px;
+background-color:#ffffb3;
+ border: 1px solid #000000;
+width:800;
+}
+img
+{
+width:200;
+height:300;
+}
+td
+{
+width:60;
+height:50;
+padding-left:10px;
+}
+input[type="text"]
+{
+width:200;
+height:30;
+}
+input[type="date"]
+{
+width:200;
+height:30;
+}
+input[type="number"]
+{
+width:200;
+height:30;
+}
+input[type="email"]
+{
+width:200;
+height:30;
+}
+select
+{
+width:200;
+height:30;
+}
+.newtext:focus
+{
+    border: 1px solid r;
+}
+</style>
+<script type="text/javascript">
+function chkblnk(fn)
+{
+var x=document.getElementById(fn).value;
+if(x=="")
+{
+document.getElementById(fn).style.borderColor = "red";
+}
+else
+{
+document.getElementById(fn).style.borderColor = "";
+}
+}
+</script>
+<body id="title">
+<script id="handlebars-demo" type="text/x-handlebars-template">
+<form action="" name="myForm"  method="post">
+<table align="center">
+<tr>
+<td colspan="2">
+<h3 align="center">Personal Informarion </h3>
+</td>
+</tr>
+<tr>
+<!--<td >photo</td>
+<td><img src="download.jpg" alt="photo" ></td>
+</tr>-->
+
+<tr>
+<td>Name</td>
+<td><input type="text" name="name"  pattern="[a-z][A-Z]{50}" id="fn" onblur="chkblnk('fn')" value="{{name}}"
+title="Fill only Alphabet."></td>
+
+</tr>
+<tr>
+<td>occupation</td>
+<td><input type="text" name="dob" id="dob" onblur="chkblnk('dob')" value="{{occupation}}"></td>
+
+</tr>
+<tr>
+<td>Mobile number</td>
+<td><input type="number" name="mobilenumber"  id="mn"onblur="chkblnk('mn')" value="{{mobile}}"></td>
+
+</tr>
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="emailid"  id="mail" onblur="chkblnk('mail','error3')" value="{{email}}"></td>
+
+</tr>
+<tr>
+<td>Education</td>
+<!--{{#if education}}
+<td>
+
+<input type="text" value="{{education}}">
+
+
+</td>
+{{/if}}-->
+<td><select name="box" id="sb" onblur="chkblnk('sb')">
+<option value="BCA">Select Education</option>
+<option value="Bsc"    {{#if education '==' 'Bsc'}} selected=""{{/if}}>Bsc</option>
+<option value="BE" {{#if education}} selected=""{{/if}}>BE</option>
+<option value="Deop" {{#if education}} selected=""{{/if}}>BCA</option>
+<option value="B.tec" {{#if education}} selected=""{{/if}}>B.tec</option>
+</select>
+<td  id="error4" style="color:red"></td>
+</td>
+
+</tr>
+<tr>
+<td>Blood group</td>
+<td><input type="text" name="blood group" id="bg" onblur="chkblnk('bg')">
+</td>
+<td  id="error5" style="color:red"></td>
+</tr>
+<tr>
+<td>Native place</td>
+<td><input type="text" name="native place" id="np" onblur="chkblnk('np')" >
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea rows="3" cols="25" id="add" onblur="chkblnk('add')" >
+</textarea>
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Male <input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female">
+</td>
+</tr>
+
+<tr>
+<td>Hobby</td>
+<td><input type="checkbox" name="readingbook" value="book">Reading Book<br>
+<input type="checkbox" name="watchingTV" value="TV">Watching TV<br>
+<input type="checkbox" name="racingbike" value="bike">Racing Bike<br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="2" align="center" height="50">
+ <input type="submit" value="Submit">
+</td>
+</tr>
+</table>
+</form>
+</script>
+</body>
+</html>

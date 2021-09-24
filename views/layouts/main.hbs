@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Paysmart shop - Multipurpose Recharge & Billing Payment System</title>
+
+
+    <link href="images/favicon.png" rel="shortcut icon">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/coreNavigation-1.1.3.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>-
+
+<body>
+
+    <!-- Preloader -->
+   
+
+    {{>header}}
+    {{{body}}}
+   {{>footer}}
+    <!-- Footer end -->
+
+    <!-- Data Plan -->
+    <section class="modalBody tleft nopad pall">
+        <span class="overlay"></span>
+        <div class="brpln open">
+            <button class="close-button">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="outerblock greybgdark bg-offwhite">
+                <form class="row">
+                    <div class="col-md-2 ">
+                        <b class="ft18 dpInBLockMid">Browse Plans</b>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="custom-select" id="plan-operator" required="">
+                            <option value="">Select Your Operator</option>
+                            <option>GramenPhone</option>
+                            <option>Banlalink</option>
+                            <option>Airtel</option>
+                            <option>Robi</option>
+                            <option>Citycell</option>
+                            <option>Xirosoft</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 ">
+                        <select class="custom-select" id="circle" required="">
+                            <option value="">Select Circle</option>
+                            <option>GramenPhone</option>
+                            <option>Banlalink</option>
+                            <option>Airtel</option>
+                            <option>Robi</option>
+                            <option>Citycell</option>
+                            <option>Xirosoft</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group nomargin mbottom">
+                            <input class="form-control" id="amounts" placeholder="Enter Amount" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                </form>
+
+            </div>
+            <!---->
+            <div class="dpTable wdFull row">
+                <div class="col-md-3 pakage-sidebar pr-0">
+                    <div class="scrollY">
+                        <div class="data-nav">
+                            <ul>
+                                <li data-value="pak1" class="data-menu active">Special Offer</li>
+                                <li data-value="pak2" class="data-menu">Topup</li>
+                                <li data-value="pak3" class="data-menu">Full Talktime</li>
+                                <li data-value="pak4" class="data-menu">4G</li>
+                                <li data-value="pak5" class="data-menu">3G</li>
+                                <li data-value="pak6" class="data-menu">Rate Cutter</li>
+                                <li data-value="pak7" class="data-menu">SMS</li>
+                                <li data-value="pak8" class="data-menu">Data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dpTbCell col-md-9">
+                    <div class="row plan-titles">
+                        <div class="col-md-12">
+                            <div class="row bg-offwhite mr-0 p-2">
+                                <div class="col-md-1 spright0">Talktime</div>
+                                <div class="col-md-2">Validity</div>
+                                <div class="col-md-6 spright40">Description</div>
+                                <div class="col-md-2 spleft0">Price</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollY spbottom40">
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">1 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 100 Local &amp; National SMS &amp; 100 MB 2G/3G/4G Data
+                                &amp; Data Validity 1 day(s) &amp; Capping : Daily @ 250 min + Weekly @ 1000 min &amp;
+                                thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">3 days</div>
+                            <div class="col-md-6 spright40">Local @ 30p/min &amp; STD @ 30p/min &amp; Roaming Outgoing
+                                Local @ 30p/min &amp; Roaming Outgoing STD @ 30p/min</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">2 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 200 Local &amp; National SMS &amp; 150 MB 2G/3G/4G Data
+                                &amp; Data Validity 2 day(s) &amp; Free SMS @ 100 SMS per day - Capping : Daily @ 250
+                                min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">7 days</div>
+                            <div class="col-md-6 spright40">Local @ 30p/min &amp; STD @ 30p/min &amp; Roaming Outgoing
+                                Local @ 30p/min &amp; Roaming Outgoing STD @ 30p/min</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak2">
+                            <div class="col-md-1 spright0">26</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Talktime Rs. 26 &amp; 100 MB 2G/3G/4G Data &amp; Data
+                                Validity 28 day(s) &amp; Talktime valid for 28 day(s) - Applicable recharge for plan
+                                voucher Rs. 24</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak2">
+                            <div class="col-md-1 spright0">30</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Talktime Rs. 30 &amp; 100 MB 2G/3G/4G Data &amp; Data
+                                Validity 28 day(s) &amp; Talktime valid for 28 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak3">
+                            <div class="col-md-1 spright0">55</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Talktime Rs. 55 &amp; Local @ 60p/min &amp; STD @ 60p/min
+                                &amp; 200 MB 2G/3G/4G Data &amp; Data Validity 28 day(s) &amp; Talktime valid for 28
+                                day(s) - Applicable recharge for plan voucher Rs. 24</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak2">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">150 Local, STD &amp; Roaming mins &amp; 100 Local &amp;
+                                National SMS &amp; 250 MB 2G/3G/4G Data &amp; Data Validity 28 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak3">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">10 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 1000 Local &amp; National SMS &amp; 1 GB 2G/3G/4G Data
+                                &amp; Data Validity 10 day(s) &amp; Free SMS @ 100 SMS per day - Capping : Daily @ 250
+                                min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak4">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">12 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 1200 Local &amp; National SMS &amp; Free SMS @ 100 SMS
+                                per day - Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak5">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 300 Local &amp; National SMS &amp; 1 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak6">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 300 Local &amp; National SMS &amp; 2 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak7">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 300 Local &amp; National SMS &amp; 3 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak8">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">21 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2100 Local &amp; National SMS &amp; Free SMS @ 100 SMS
+                                per day</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak7">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">21 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2100 Local &amp; National SMS &amp; Free SMS @ 100 SMS
+                                per day - Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak8">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 28 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1 GB per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak6">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 28 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s) &amp; Data 1 GB per day + Extra 1 GB data - Free SMS @ 100
+                                SMS per day - Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak4">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 2 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s) &amp; Free SMS @ 100 SMS per day - Capping : Daily @ 250
+                                min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak5">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 42 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1.5 GB per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak6">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">35 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 600 Local &amp; National SMS &amp; 2 GB 2G/3G/4G Data
+                                &amp; Data Validity 35 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak8">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 44.8 GB 2G/3G/4G
+                                Data &amp; Data Validity 28 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1.6 GB per
+                                day - Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak7">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">48 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 600 Local &amp; National SMS &amp; 4 GB 2G/3G/4G Data
+                                &amp; Data Validity 48 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak4">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 42 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s) &amp; Data @ 1.5 GB per day - Free SMS @ 100 SMS per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec - Unlimited
+                                Dialer tone + Missed Call Alert</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">28 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 2800 Local &amp; National SMS &amp; 70 GB 2G/3G/4G Data
+                                &amp; Data Validity 28 day(s) &amp; Data @ 2.5 GB per day - Free SMS @ 100 SMS per day
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak2">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">70 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 1000 Local &amp; National SMS &amp; 3 GB 2G/3G/4G Data
+                                &amp; Data Validity 70 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak3">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">70 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 7000 Local &amp; National SMS &amp; 98 GB 2G/3G/4G Data
+                                &amp; Data Validity 70 day(s) &amp; Data @ 1.4 GB per day - Free SMS @ 100 SMS per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak3">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">84 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 8400 Local &amp; National SMS &amp; 84 GB 2G/3G/4G Data
+                                &amp; Data Validity 84 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1 GB per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak4">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">84 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 8400 Local &amp; National SMS &amp; 126 GB 2G/3G/4G Data
+                                &amp; Data Validity 84 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1.5 GB per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak5">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">84 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 8400 Local &amp; National SMS &amp; 134.4 GB 2G/3G/4G
+                                Data &amp; Data Validity 84 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1.6 GB per
+                                day - Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak6">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">82 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 8200 Local &amp; National SMS &amp; 164 GB 2G/3G/4G Data
+                                &amp; Data Validity 82 day(s) &amp; Data @ 2 GB per day - Free SMS @ 100 SMS per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak7">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">90 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 9000 Local &amp; National SMS &amp; 135 GB 2G/3G/4G Data
+                                &amp; Data Validity 90 day(s) &amp; Data @ 1.5 GB per day - Free SMS @ 100 SMS per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak8">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">90 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 9000 Local &amp; National SMS &amp; 135 GB 2G/3G/4G Data
+                                &amp; Data Validity 90 day(s) &amp; Free SMS @ 100 SMS per day - Data @ 1.5 GB per day -
+                                Capping : Daily @ 250 min + Weekly @ 1000 min &amp; thereafter @ 1p/sec</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">180 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 1800 Local &amp; National SMS &amp; 6 GB 2G/3G/4G Data
+                                &amp; Data Validity 180 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row data-pakage pak1">
+                            <div class="col-md-1 spright0">0</div>
+                            <div class="col-md-2">365 days</div>
+                            <div class="col-md-6 spright40">Local calls free &amp; STD calls free &amp; Roaming Incoming
+                                &amp; Outgoing calls free &amp; 3600 Local &amp; National SMS &amp; 12 GB 2G/3G/4G Data
+                                &amp; Data Validity 365 day(s)</div>
+                            <div class="col-md-3">
+                                <button class="btn d-block btn-filled">$99</button>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Data plan End -->
+
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxYLtelXg0PGjeTiFDtlN7nrH_47buDWo"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/coreNavigation-1.1.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+</html>
